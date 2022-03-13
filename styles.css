@@ -1,0 +1,149 @@
+/* 
+#E5EFF5 - light gray
+#98A6BD - grayish blue
+#2AB2AF - cyan
+##4bbebc - cyanish
+#C0DF34 - bright yellow
+#c4c7cf - light gray
+*/
+
+body {
+  background-color: #E5EFF5;
+  padding: 120px;
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+  background-color: #C0DF34;
+  display: grid;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 5px 5px 7px rgb(0,0,0, 0.12);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 16px;
+  color: white;
+
+}
+
+ul {
+  list-style: none;
+  color: #E5EFF5;
+  padding:0;
+}
+
+li {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'item1 item1'
+  'item2 item3';
+  grid-template-columns: 
+  1fr 1fr;
+}
+
+.item-1 { 
+  grid-area: item1; 
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.item-1 h1 {
+  color: #2AB2AF;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.item-1 h2 {
+  color: #C0DF34;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.item-1 p {
+   color: #c4c7cf;
+   font-size: 12px;
+   line-height: 1.6;
+}
+
+.item-2 { 
+    grid-area: item2;
+    background-color: #2AB2AF; 
+    padding: 40px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.item-2 h1 {
+    font-weight: 400;
+}
+  
+.item-2 th {
+    color: white;
+    font-size: 26px;
+}
+
+.item-2 td {
+    color: #E5EFF5;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.item-2 p {
+    color: #E5EFF5;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.item-3 { 
+     grid-area: item3; 
+     background-color: #4bbebc;
+     padding: 40px;
+     border-radius: 0px 0px 10px 0px;
+}
+
+.item-3 h1 {
+    font-weight: 400;
+}
+
+@media (max-width:375px) {
+    
+    body {
+        padding: 40px;;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-areas: 
+      'item1'
+      'item2'
+      'item3';
+     grid-template-columns: 1fr;
+    }
+    
+    .item-1 {
+       border-radius: 10px 10px 0px 0px;
+  }
+    
+    .item-2 {
+   border-radius: 0px;
+}
+     .item-3 {
+   border-radius: 0px 0px 10px 10px;
+}
+    
+}
